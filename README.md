@@ -57,13 +57,6 @@ This repository contains the computational workflow for analyzing salt stress re
 - GPD gene connectivity analysis (kIM, kME, hub gene identification)
 - Network export for Cytoscape visualization
 
-**Outputs:**
-- VST-transformed expression data
-- Gene-to-module assignments (`salt_gene_modules.csv`)
-- Module eigengenes and connectivity metrics
-- Network files for visualization
-- Complete R session for reproducibility
-
 ### Step 2: Differential Expression Analysis (`Cre_Salt_DESeq2.R`)
 
 **Purpose:** Identifies differentially expressed genes across time-course salt stress conditions.
@@ -99,13 +92,6 @@ This repository contains the computational workflow for analyzing salt stress re
 - Integration with biomaRt for GO annotations
 
 **Dependencies:** Requires WGCNA output (`salt_gene_modules.csv`) and raw count data (`Cre_rawCounts.csv`)
-
-**Outputs:**
-- Significant GO terms (p.adj < 0.05)
-- Top 5 results per module-ontology combination
-- Bar plots for enriched terms
-- Summary statistics
-- Session information for reproducibility
 
 ### Step 4: Machine Learning Validation (`Cre_salt_MachineLearning_RandomForest.R`)
 
@@ -255,3 +241,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 **Note:** This repository contains the computational analysis supporting the peer-reviewed publication. All scripts are designed for reproducibility and transparency in scientific research.
+
