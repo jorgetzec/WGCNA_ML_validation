@@ -2,8 +2,8 @@
 #           Differential Expression Analysis (DESeq2)
 #          Salt Stress Response in Chlamydomonas reinhardtii
 
-#  Script for: Integrating co-expression network analysis and machine learning to uncover 
-#  GPD genes regulation in Chlamydomonas reinhardtii under salinity stress 
+#  Script for: Integrating co-expression network analysis and machine learning to reveal 
+#  the regulatory landscape of GPD genes in Chlamydomonas reinhardtii under salinity stress
 #
 #  This script performs differential expression analysis to identify genes
 #  differentially expressed under salt stress conditions (200 mM NaCl) across 
@@ -434,3 +434,4 @@ package_versions_df <- data.frame(
 write.csv(package_versions_df, 
           file = paste0(date_export, "_", condition_prefix, "_DESEq2_PackageVersions.csv"),
           row.names = FALSE)
+
