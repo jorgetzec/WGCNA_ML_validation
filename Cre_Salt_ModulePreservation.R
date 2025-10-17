@@ -7,8 +7,8 @@
 #  points within genes, maintaining expression distributions while disrupting
 #  temporal structure to assess statistical significance of module stability. 
 #
-#  Script for: Integrating co-expression network analysis and machine learning to uncover 
-#  GPD genes regulation in Chlamydomonas reinhardtii under salinity stress 
+#  Script for: Integrating co-expression network analysis and machine learning to reveal 
+#  the regulatory landscape of GPD genes in Chlamydomonas reinhardtii under salinity stress
 #
 #  Authors: Tzec-Interián et al.
 #  Date: October 2025
@@ -203,3 +203,4 @@ save.image(file = paste0(date_export, "_", condition_prefix, "_ModulePreservatio
 
 message("Session information exported.")
 message("Module preservation analysis completed successfully.")
+
