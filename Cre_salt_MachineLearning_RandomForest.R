@@ -2,8 +2,8 @@
 #          Random Forest Validation of WGCNA Module Assignments
 #           Salt Stress Response in Chlamydomonas reinhardtii
 #
-#  Script for: Integrating co-expression network analysis and machine learning to uncover 
-#  GPD genes regulation in Chlamydomonas reinhardtii under salinity stress 
+#  Script for: Integrating co-expression network analysis and machine learning to reveal 
+#  the regulatory landscape of GPD genes in Chlamydomonas reinhardtii under salinity stress
 #
 #  This script validates WGCNA module assignments using Random Forest classification
 #  with comprehensive performance metrics including ROC curves, confusion matrices,
@@ -523,4 +523,5 @@ write.csv(package_versions_df,
 
 message("Session information exported for reproducibility.")
 message("Random Forest validation analysis completed.")
+
 
