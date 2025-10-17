@@ -2,8 +2,8 @@
 #           Gene Ontology Enrichment Analysis (topGO)
 #          Salt Stress Response in Chlamydomonas reinhardtii
 
-#  Script for: Integrating co-expression network analysis and machine learning to uncover 
-#  GPD genes regulation in Chlamydomonas reinhardtii under salinity stress 
+#  Script for: Integrating co-expression network analysis and machine learning to reveal 
+#  the regulatory landscape of GPD genes in Chlamydomonas reinhardtii under salinity stress
 #
 #  This script performs Gene Ontology (GO) enrichment analysis for WGCNA modules
 #  using topGO to identify biological processes, molecular functions, and cellular
@@ -306,3 +306,4 @@ write.csv(package_versions_df,
 
 message("Gene Ontology enrichment analysis completed.")
 message("Session information exported for reproducibility.")
+
