@@ -2,8 +2,8 @@
 #           Weighted Gene Co-expression Network Analysis (WGCNA)
 #          Salt Stress Response in Chlamydomonas reinhardtii
 
-#  Script for: Integrating co-expression network analysis and machine learning to uncover 
-#  GPD genes regulation in Chlamydomonas reinhardtii under salinity stress 
+#  Script for: Integrating co-expression network analysis and machine learning to reveal 
+#  the regulatory landscape of GPD genes in Chlamydomonas reinhardtii under salinity stress
 #
 #  This script performs WGCNA to identify co-expressed gene modules under
 #  salt stress conditions (200 mM NaCl) across a time-course experiment.
@@ -816,3 +816,4 @@ write.csv(package_versions_df,
 
 message("Session information exported for reproducibility.")
 message("WGCNA analysis for salt stress completed.")
+
