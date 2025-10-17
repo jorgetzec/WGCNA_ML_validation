@@ -6,7 +6,7 @@ This repository contains the computational workflow for analyzing salt stress re
 
 ## Research Context
 
-**Study:** Integrating co-expression network analysis and machine learning to uncover GPD genes regulation in *Chlamydomonas reinhardtii* under salinity stress
+**Study:** Integrating co-expression network analysis and machine learning to reveal the regulatory landscape of *GPD* genes in *Chlamydomonas reinhardtii* under salinity stress
 
 **Authors:** Tzec-Interián et al.
 
@@ -241,4 +241,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 **Note:** This repository contains the computational analysis supporting the peer-reviewed publication. All scripts are designed for reproducibility and transparency in scientific research.
+
 
