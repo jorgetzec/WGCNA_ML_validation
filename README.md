@@ -208,8 +208,10 @@ For questions about this analysis or repository, please refer to the original pu
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Version History
-- **v1.0** (October 2025): Initial release
-  - Complete WGCNA analysis pipeline
+- **v1.1** (January 2026): Current version
+  - Complete WGCNA co-expression network analysis pipeline
+  - DESeq2 differential expression analysis across time-course conditions
+  - Gene Ontology enrichment analysis for WGCNA modules
   - Random Forest validation with comprehensive metrics
   - Publication-ready visualizations and documentation
 
