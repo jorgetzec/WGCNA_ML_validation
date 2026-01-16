@@ -213,11 +213,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
   - Random Forest validation with comprehensive metrics
   - Publication-ready visualizations and documentation
 
-## How to Cite
-If you use this repository, please cite it as follows:
-
-Tzec Interián, J. A. (2025). *WGCNA_ML_validation (Version 1.0.0)* [Source code]. Zenodo. https://doi.org/10.5281/zenodo.17469765
-
 ---
 **Note:** This repository contains the computational analysis supporting the peer-reviewed publication. All scripts are designed for reproducibility and transparency in scientific research.
 
