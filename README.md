@@ -24,7 +24,6 @@ This repository contains the computational workflow for analyzing salt stress re
 | `Cre_Salt_DESeq2.R` | Differential Expression | Performs differential expression analysis across time-course salt stress conditions |
 | `Cre_Salt_GeneOntology.R` | GO Enrichment | Performs Gene Ontology enrichment analysis for WGCNA modules using topGO |
 | `Cre_salt_MachineLearning_RandomForest.R` | ML Validation | Validates WGCNA module assignments using Random Forest classification |
-| `Cre_Salt_ModulePreservation.R` | Module Preservation | Evaluates module stability against null models through permutation analysis |
 
 ### Data Files
 
@@ -39,7 +38,6 @@ This repository contains the computational workflow for analyzing salt stress re
 |------|-------------|
 | `20251014_salt_SessionInfo.txt` | R session info from WGCNA analysis |
 | `20251014_salt_ML_RandomForest_SessionInfo.txt` | R session info from ML validation |
-| `20251014_salt_ModulePreservation_SessionInfo.txt` | R session info from preservation analysis |
 
 
 ## Analysis Steps
@@ -111,22 +109,6 @@ This repository contains the computational workflow for analyzing salt stress re
 - Sensitivity and specificity
 - Detailed misclassification reports
 
-### Step 5: Module Preservation Analysis (`Cre_Salt_ModulePreservation.R`)
-
-**Purpose:** Evaluates module stability against null models through permutation analysis.
-
-**Key Features:**
-- Null model generation by permuting time points within genes
-- Module preservation analysis with 100 permutations
-- Z-summary and medianRank statistics
-- Module eigengene correlation analysis
-- Statistical significance assessment
-
-**Interpretation Guidelines:**
-- Z-summary > 10: Strongly preserved
-- Z-summary 2-10: Moderately preserved  
-- Z-summary < 2: Not preserved
-
 ## Installation and Setup
 
 ### System Requirements
@@ -173,9 +155,6 @@ source("Cre_Salt_GeneOntology.R")
 
 # Step 4: Run Random Forest validation  
 source("Cre_salt_MachineLearning_RandomForest.R")
-
-# Step 5: Run module preservation analysis
-source("Cre_Salt_ModulePreservation.R")
 ```
 
 ### Individual Scripts
@@ -194,9 +173,6 @@ source("Cre_Salt_GeneOntology.R")
 
 # ML validation (requires WGCNA outputs)
 source("Cre_salt_MachineLearning_RandomForest.R")
-
-# Module preservation (requires WGCNA outputs)
-source("Cre_Salt_ModulePreservation.R")
 ```
 
 ## Reproducibility
@@ -208,7 +184,6 @@ All random processes use fixed seeds for reproducibility:
 - **ML Training:** `set.seed(123)`
 - **Data Splitting:** `set.seed(123)`
 - **UMAP:** `set.seed(42)`
-- **Module Preservation:** `randomSeed = 1234`
 
 ### Session Information
 
@@ -236,7 +211,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **v1.0** (October 2025): Initial release
   - Complete WGCNA analysis pipeline
   - Random Forest validation with comprehensive metrics
-  - Module preservation analysis with null models
   - Publication-ready visualizations and documentation
 
 ## How to Cite
